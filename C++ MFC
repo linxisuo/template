@@ -1,0 +1,13 @@
+for (int i = 0; i < InstanceAll.size(); i++)
+	{
+		for (int j = 0; j < InstanceAll.size(); j++)
+		{
+			if (InstanceAll.at(i) == InstanceAll.at(j) && TechAll.at(i) == TechAll.at(j))
+			{
+				vector< int >::iterator k = InstanceAll.begin() + j;
+				InstanceAll.erase(k);
+				vector< int >::iterator kk = TechAll.begin() + j;
+				TechAll.erase(kk);
+			}
+		}
+	}
