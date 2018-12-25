@@ -2,7 +2,9 @@ for (int i = 0; i < InstanceAll.size(); i++)
 	{
 		for (int j = 0; j < InstanceAll.size(); j++)
 		{
-			if (InstanceAll.at(i) == InstanceAll.at(j) && TechAll.at(i) == TechAll.at(j))
+			int temp1 = InstanceAll.at(i);
+			int temp2 = TechAll.at(i);
+			if (temp1 == InstanceAll.at(j) && temp2 == TechAll.at(j))
 			{
 				vector< int >::iterator k = InstanceAll.begin() + j;
 				InstanceAll.erase(k);
